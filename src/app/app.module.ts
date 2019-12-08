@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
+import { ShareModule } from './share/share.module';
+import { DessertstoreModule } from './features/dessertstore/dessertstore.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +14,9 @@ import { RouterModule } from '@angular/router';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    ShareModule,
+    DessertstoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

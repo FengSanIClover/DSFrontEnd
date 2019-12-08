@@ -17,29 +17,29 @@ $col-2: $col*2;
 $col-1: $col*1;
 
 
-.container{
+.l_container{
   margin: 0 auto;
   overflow: hidden;
   width: 100%;
 }
 
 @mixin grid-col($size,$pre:"y") {
-  .col-#{$size}-12,
-  .col-#{$size}-11,
-  .col-#{$size}-10,
-  .col-#{$size}-9,
-  .col-#{$size}-8,
-  .col-#{$size}-7,
-  .col-#{$size}-6,
-  .col-#{$size}-5,
-  .col-#{$size}-4,
-  .col-#{$size}-3,
-  .col-#{$size}-2,
-  .col-#{$size}-1{
+  .l_col-#{$size}-12,
+  .l_col-#{$size}-11,
+  .l_col-#{$size}-10,
+  .l_col-#{$size}-9,
+  .l_col-#{$size}-8,
+  .l_col-#{$size}-7,
+  .l_col-#{$size}-6,
+  .l_col-#{$size}-5,
+  .l_col-#{$size}-4,
+  .l_col-#{$size}-3,
+  .l_col-#{$size}-2,
+  .l_col-#{$size}-1{
     float: left;
   }
 
-  .col-#{$size}-12 {
+  .l_col-#{$size}-12 {
     @if ($pre == "y") {
       width: 100%;
     } @else {
@@ -47,7 +47,7 @@ $col-1: $col*1;
     }
   }
 
-  .col-#{$size}-11 {
+  .l_col-#{$size}-11 {
     @if ($pre == "y") {
       width: 100%;
     } @else {
@@ -55,7 +55,7 @@ $col-1: $col*1;
     }
   }
 
-  .col-#{$size}-10 {
+  .l_col-#{$size}-10 {
     @if ($pre == "y") {
       width: 100%;
     } @else {
@@ -63,7 +63,7 @@ $col-1: $col*1;
     }
   }
 
-  .col-#{$size}-9 {
+  .l_col-#{$size}-9 {
     @if ($pre == "y") {
       width: 100%;
     } @else {
@@ -71,7 +71,7 @@ $col-1: $col*1;
     }
   }
 
-  .col-#{$size}-8 {
+  .l_col-#{$size}-8 {
     @if ($pre == "y") {
       width: 100%;
     } @else {
@@ -79,7 +79,7 @@ $col-1: $col*1;
     }
   }
 
-  .col-#{$size}-7 {
+  .l_col-#{$size}-7 {
     @if ($pre == "y") {
       width: 100%;
     } @else {
@@ -87,7 +87,7 @@ $col-1: $col*1;
     }
   }
 
-  .col-#{$size}-6 {
+  .l_col-#{$size}-6 {
     @if ($pre == "y") {
       width: 100%;
     } @else {
@@ -95,7 +95,7 @@ $col-1: $col*1;
     }
   }
 
-  .col-#{$size}-5 {
+  .l_col-#{$size}-5 {
     @if ($pre == "y") {
       width: 100%;
     } @else {
@@ -103,7 +103,7 @@ $col-1: $col*1;
     }
   }
 
-  .col-#{$size}-4 {
+  .l_col-#{$size}-4 {
     @if ($pre == "y") {
       width: 100%;
     } @else {
@@ -111,7 +111,7 @@ $col-1: $col*1;
     }
   }
 
-  .col-#{$size}-3 {
+  .l_col-#{$size}-3 {
     @if ($pre == "y") {
       width: 100%;
     } @else {
@@ -119,14 +119,14 @@ $col-1: $col*1;
     }
   }
 
-  .col-#{$size}-2 {
+  .l_col-#{$size}-2 {
     @if ($pre == "y") {
       width: 100%;
     } @else {
       width: $col-2;
     }
   }
-  .col-#{$size}-1 {
+  .l_col-#{$size}-1 {
     @if ($pre == "y") {
       width: 100%;
     } @else {
@@ -141,21 +141,21 @@ $col-1: $col*1;
 
 @media (min-width:$sm) {
   @include grid-col(sm,"n");
-  .container {
+  .l_container {
     width: 760px;
   }
 }
 
 @media (min-width:$md) {
   @include grid-col(md,"n");
-  .container {
+  .l_container {
     width: 970px;
   }
 }
 
 @media (min-width:$lg) {
   @include grid-col(lg,"n");
-  .container {
+  .l_container {
     width: 1024px;
   }
 }
