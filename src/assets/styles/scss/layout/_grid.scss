@@ -1,6 +1,5 @@
 $sm:768px;
-$md:992px;
-$lg:1200px;
+$md:940px;
 
 $col:100% / 12;
 $col-12: $col*12;
@@ -137,7 +136,6 @@ $col-1: $col*1;
 
 @include grid-col(sm);
 @include grid-col(md);
-@include grid-col(lg);
 
 @media (min-width:$sm) {
   @include grid-col(sm,"n");
@@ -149,13 +147,6 @@ $col-1: $col*1;
 @media (min-width:$md) {
   @include grid-col(md,"n");
   .l_container {
-    width: 970px;
-  }
-}
-
-@media (min-width:$lg) {
-  @include grid-col(lg,"n");
-  .l_container {
-    width: 1024px;
+    width: 940px;
   }
 }
