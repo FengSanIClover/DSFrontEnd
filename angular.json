@@ -28,6 +28,8 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/styles/css/default.css",
+              "src/assets/styles/scss/core.scss",
               "src/styles.scss"
             ],
             "scripts": []
@@ -123,6 +125,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "DSFrontEnd"
 }
