@@ -1,7 +1,26 @@
 @import '../basic';
 
+%mouse_hover{
+  color:white;
+  background-color: $main_txt_color;
+}
+
+%a_style {
+  text-align: left;
+  font-weight: bold;
+  color: $main_txt_color;
+  letter-spacing: 0;
+  opacity: 1;
+  transition: 0.3s all;
+  padding: 30px;
+
+  &:hover{
+    @extend %mouse_hover;
+  }
+}
+
 .n_height {
-  height: 100px;
+   height: 100px;
 }
 
 .l_flexbox {
@@ -12,23 +31,50 @@
   justify-content: space-between;
 }
 
-.n_ul {
+.n_btn_bar{
+  display: none;
+  padding: 30px;
+  border: none;
+  background-color: transparent;
+  color: $main_txt_color;
+  &:hover{
+    @extend %mouse_hover;
+  }
+}
 
+.n_ml_auto{
+  margin-left: auto;
+}
+
+.n_ul {
   display: flex;
+  flex-direction: row;
   li {
     a {
-      text-align: left;
-      font-weight: bold;
-      color: $main_txt_color;
-      letter-spacing: 0;
-      opacity: 1;
-      transition: 0.3s all;
-      padding: 30px;
-
-      &:hover{
-        color:white;
-        background-color: $main_txt_color;
-      }
+      @extend %a_style;
     }
+  }
+}
+
+.n_shopping_car{
+  a {
+    @extend %a_style;
+  }
+}
+
+@media (max-width:767px) {
+  .l_flexbox {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .n_height{
+    height: 100%;
+  }
+  .n_ul{
+    display: none;
+  }
+
+  .n_btn_bar{
+    display: block;
   }
 }
