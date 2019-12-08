@@ -1,0 +1,161 @@
+$sm:768px;
+$md:992px;
+$lg:1200px;
+
+$col:100% / 12;
+$col-12: $col*12;
+$col-11: $col*11;
+$col-10: $col*10;
+$col-9: $col*9;
+$col-8: $col*8;
+$col-7: $col*7;
+$col-6: $col*6;
+$col-5: $col*5;
+$col-4: $col*4;
+$col-3: $col*3;
+$col-2: $col*2;
+$col-1: $col*1;
+
+
+.container{
+  margin: 0 auto;
+  overflow: hidden;
+  width: 100%;
+}
+
+@mixin grid-col($size,$pre:"y") {
+  .col-#{$size}-12,
+  .col-#{$size}-11,
+  .col-#{$size}-10,
+  .col-#{$size}-9,
+  .col-#{$size}-8,
+  .col-#{$size}-7,
+  .col-#{$size}-6,
+  .col-#{$size}-5,
+  .col-#{$size}-4,
+  .col-#{$size}-3,
+  .col-#{$size}-2,
+  .col-#{$size}-1{
+    float: left;
+  }
+
+  .col-#{$size}-12 {
+    @if ($pre == "y") {
+      width: 100%;
+    } @else {
+      width: $col-12;
+    }
+  }
+
+  .col-#{$size}-11 {
+    @if ($pre == "y") {
+      width: 100%;
+    } @else {
+      width: $col-11;
+    }
+  }
+
+  .col-#{$size}-10 {
+    @if ($pre == "y") {
+      width: 100%;
+    } @else {
+      width: $col-10;
+    }
+  }
+
+  .col-#{$size}-9 {
+    @if ($pre == "y") {
+      width: 100%;
+    } @else {
+      width: $col-9;
+    }
+  }
+
+  .col-#{$size}-8 {
+    @if ($pre == "y") {
+      width: 100%;
+    } @else {
+      width: $col-8;
+    }
+  }
+
+  .col-#{$size}-7 {
+    @if ($pre == "y") {
+      width: 100%;
+    } @else {
+      width: $col-7;
+    }
+  }
+
+  .col-#{$size}-6 {
+    @if ($pre == "y") {
+      width: 100%;
+    } @else {
+      width: $col-6;
+    }
+  }
+
+  .col-#{$size}-5 {
+    @if ($pre == "y") {
+      width: 100%;
+    } @else {
+      width: $col-5;
+    }
+  }
+
+  .col-#{$size}-4 {
+    @if ($pre == "y") {
+      width: 100%;
+    } @else {
+      width: $col-4;
+    }
+  }
+
+  .col-#{$size}-3 {
+    @if ($pre == "y") {
+      width: 100%;
+    } @else {
+      width: $col-3;
+    }
+  }
+
+  .col-#{$size}-2 {
+    @if ($pre == "y") {
+      width: 100%;
+    } @else {
+      width: $col-2;
+    }
+  }
+  .col-#{$size}-1 {
+    @if ($pre == "y") {
+      width: 100%;
+    } @else {
+      width: $col-1;
+    }
+  }
+}
+
+@include grid-col(sm);
+@include grid-col(md);
+@include grid-col(lg);
+
+@media (min-width:$sm) {
+  @include grid-col(sm,"n");
+  .container {
+    width: 760px;
+  }
+}
+
+@media (min-width:$md) {
+  @include grid-col(md,"n");
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width:$lg) {
+  @include grid-col(lg,"n");
+  .container {
+    width: 1024px;
+  }
+}
