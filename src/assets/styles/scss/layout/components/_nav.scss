@@ -42,6 +42,14 @@
   }
 }
 
+.n_logo_all{
+  display: inline;
+}
+
+.n_logo_small{
+  display: none;
+}
+
 .n_ml_auto{
   margin-left: auto;
 }
@@ -70,11 +78,22 @@
   .n_height{
     height: 100%;
   }
-  .n_ul{
+  .n_ul,.n_logo_all{
     display: none;
   }
 
+  // .n_ml_auto{
+  //   margin-left: 0px;
+  // }
+
   .n_btn_bar{
     display: block;
+  }
+
+  .n_logo_small{
+    display: inline-block;
+    width: 50%;
+    padding-left: 30%;
+    padding-right: 30%;
   }
 }
