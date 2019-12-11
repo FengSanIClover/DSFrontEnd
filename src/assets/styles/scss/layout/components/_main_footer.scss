@@ -1,0 +1,74 @@
+@import '../basic';
+
+.f_container{
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 1024px ;
+  height: 120px;
+  background-color: $main_txt_color;
+}
+
+.f_padding{
+  padding: 40px 120px 40px 120px;
+}
+
+.f_subscribe_inline{
+  display: inline;
+  color: $sub_txt_color;
+  margin-left: 20px;
+}
+
+.f_flexbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.f_register_box{
+  display: flex;
+  height: 56px;
+  width: 380px;
+  background-color: $register_bak_color;
+  position: relative;
+  margin-left: 250px;
+}
+
+.f_envelope_style {
+  font-size: 1.5rem;
+  color: $main_txt_color;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.f_input{
+  width: 100%;
+  margin-left: 3rem;
+  border: none;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  background-color: transparent;
+  outline: none;
+}
+
+
+.f_arrow_button{
+  width: 64px;
+  background-color: $arrow_btn_bak_color;
+  cursor: pointer;
+  border: none;
+  i {
+    width: 16px;
+    height: 16px;
+    color: $main_txt_color;
+  }
+
+  &:hover{
+    background-color:$arrow_btn_hover_color;
+  }
+}
+
+
+
